@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="Allbatch" value="methods"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="org.testcases.TC2Test">
+        <methods>
+          <include name="scrollProgressBar"/>
+        </methods>
+      </class> <!-- org.testcases.TC2Test -->
+      <class name="org.testcases.TC1Test">
+        <methods>
+          <include name="dynamicIds"/>
+          <include name="hiddenLayers"/>
+        </methods>
+      </class> <!-- org.testcases.TC1Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
